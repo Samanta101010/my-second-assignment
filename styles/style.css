@@ -64,3 +64,25 @@ header style
      
     
 }
+/* -------
+features
+----------  */
+.total-features{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.features-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* lovable features  */
+
+
+
+/* facts  */
+.boxes{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
