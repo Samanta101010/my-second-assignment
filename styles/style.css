@@ -8,12 +8,28 @@ common styles and utilities
 -----------  */
 body{
     font-family: 'Work Sans', sans-serif;
-}
 
+}
+.title{
+    font-size: 45px;
+    font-weight: 700;
+    color:#131313;
+
+
+}
+.detail{
+    font-size: 16px;
+    font-weight: 400;
+    color:#727272;
+    ;
+
+}
 /* ---------
 header style
 ------------  */
 .container{
+    
+    background-color: #FFF4E7;
     width:100%;
 }
 
@@ -30,6 +46,7 @@ header style
     font-size: 30px;
     font-weight: 700;
     color: #131313;
+    margin-left: 150px;
 
 }
 
@@ -43,24 +60,43 @@ header style
 }
 
 /* nav-banner style  */
+.banner-detail{
+    text-align: center;
+    
+   
+}
 
 .banner-title{
     text-align: center;
+    font-size: 64px;
+    font-weight: 700;
 
 }
 
 .banner-info{
     text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+
 
 }
 
 .banner-button{
-    margin: 0 auto;
+    width:180px;
+    height:64px;
+    background-color: #FF900E;
+    color:white;
+    border: 0;
+    border-radius: 8px;
 
 }
 .nav-banner img{
-     width: 1440px;
+     width: 1000px;
      border-radius: 8px;
+     margin-top: 50px;
+     margin-left: 200px;;
+     
      
     
 }
@@ -70,19 +106,215 @@ features
 .total-features{
     display:grid;
     grid-template-columns: repeat(2,1fr);
+    gap:76px;
+    margin-left: 200px;
 }
+
+
 .features-images{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    
+}
+.features-list{
+   
+
+}
+.list{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 287px;
+    color: #727272;
+}
+.list-b{
+    color:black;
+}
+.list-y{
+   color: #FF900E;
+}
+.list-detail{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    
+}
+.list-button{
+    width:180px;
+    height: 64px;
+    background-color:#FF900E ;
+    color:white;
+    border: 0;
+    border-radius: 8px;
+}
+/* lovable features  */
+
+.lovable-features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:54px;
+    margin-left:200px ;
+}
+.feature-left-side{
+    width:586px;
+}
+.feature-first-title{
+    border-left:5px solid #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+.feat-title{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.feat-detail{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+
+
+}
+.feature-girl-image{
+    width: 600px;
+    border-radius: 8px;
+    
+
+}
+.feat-button{
+    position: relative;
+    height: 200px;
+    width:342px;
+    background-color: #FF900E;
+    z-index: 1;
+    border-radius: 8px;
+    border:0;
+}
+/* international services  */
+.service-title{
+    text-align: center;
+}
+.intl-services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items:center ;
+    margin-left: 200px;
+}
+service img{
+    width:150px;
+    height:150px;
 }
 
-/* lovable features  */
+
 
 
 
 /* facts  */
+.facts{
+    margin-left:200px;
+}
 .boxes{
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+.box-container{
+    border:2px solid #FF900E;
+    border-radius:8px;
+    width:241.83px;
+
+}
+
+.inner-box{
+    transform:scale(.75)  translate(50px);
+    transition: background-color 3s linear 0.2s;
+    width: 50%;
+    
+  
+
+}
+
+ .inner-box:hover{
+    background-color: orangered;
+    
+    
+}
+
+/* sponsors  */
+.sponsors{
+    text-align: center;
+    margin-top: 180px;
+    margin-left:240px ;
+}
+.sponsor-images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap:50px;
+}
+
+/* footer  */
+.copyright{
+    text-align: center;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 130px;
+
+}
+@media screen and (max-width:688px) {
+
+    .total-nav{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .nav-title{
+        margin-left:10px;
+    }
+    .nav-icons a{
+        padding: 5px;
+    }
+    .banner-detail{
+        width: 200px;
+    }
+    .nav-banner img{
+        width:250px;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .total-features{
+        grid-template-columns: repeat(1,1fr);
+        margin-left:10px;
+    }
+    .features-images{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .lovable-features{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 10px;
+    }
+    .feature-left-side{
+        width:100%;
+    }
+    .feature-girl-image{
+        width:300px;
+       
+        
+    }
+    .facts{
+        margin-left:10px;
+    }
+    .boxes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsors{
+
+        margin-left: 10px;
+    }
+    .sponsor-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
